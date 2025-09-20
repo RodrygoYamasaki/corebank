@@ -19,4 +19,4 @@ Este projeto é uma API REST desenvolvida com Spring Boot para simular as funcio
    ```
 
 2. Utilize a IDE de sua escolha (IntelliJ, VS Code, Eclipse, etc.)
-3. Rode a aplicação iniciando a classe principal que está anotada com @SpringBootApplication.
+3. Rode o projeto.
