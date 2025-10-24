@@ -32,5 +32,38 @@ Este projeto é uma API REST desenvolvida com Spring Boot para simular as funcio
    https://github.com/RodrygoYamasaki/corebank.git
    ```
 
-2. Utilize a IDE de sua escolha (IntelliJ, VS Code, Eclipse, etc.)
-3. Rode o projeto.
+2. **Utilize a IDE de sua escolha (IntelliJ, VS Code, Eclipse, etc.)**
+3. **Executar a aplicação:**
+
+   ```bash
+   mvn spring-boot:run
+   ```
+4. **Testar a API: Use o Insomnia para enviar requisições HTTP.**
+
+   ```bash
+   GET http://localhost:8080/accounts
+   ```
+
+   ```bash
+   GET http://localhost:8080/accounts/{id}
+   ```
+
+   ```bash
+   POST http://localhost:8080/accounts
+   ```
+
+   ```bash
+   POST http://localhost:8080/bank/deposit
+   ```
+
+   ```bash
+   POST http://localhost:8080/bank/withdraw
+   ```
+
+   ```bash
+   POST http://localhost:8080/bank/pix
+   ```
+
+   ```bash
+   DELETE http://localhost:8080/accounts/{id}
+   ```
