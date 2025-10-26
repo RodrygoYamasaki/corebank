@@ -24,6 +24,44 @@ Este projeto é uma API REST desenvolvida com Spring Boot para simular as funcio
 
 ---
 
+## 🧩 Endpoints
+
+**POST /bank/deposit**
+- Realiza um depósito em uma conta bancária existente.
+- Corpo JSON:
+
+  ```json
+  {
+  "accountId": "5",
+  "amount": "1200.50"
+  }
+  ```
+
+**POST /bank/withdraw**
+- Realiza um saque na conta bancária.
+- Corpo JSON:
+
+  ```json
+  {
+  "accountId": "5",
+  "amount": "350.00"
+  }
+  ```
+
+**POST /bank/pix**
+- Realiza uma transferência PIX de uma conta de origem para uma conta de destino.
+- Corpo JSON:
+
+  ```json
+  {
+  "originAccountId": "5",
+  "destinationAccountId": "8",
+  "amount": "500.00"
+  }
+  ```
+
+---
+
 ## 🚀 Como Usar
 
 1. **Clone o repositório:**
@@ -39,31 +77,3 @@ Este projeto é uma API REST desenvolvida com Spring Boot para simular as funcio
    mvn spring-boot:run
    ```
 4. **Testar a API: Use o Insomnia para enviar requisições HTTP.**
-
-   ```bash
-   GET http://localhost:8080/accounts
-   ```
-
-   ```bash
-   GET http://localhost:8080/accounts/{id}
-   ```
-
-   ```bash
-   POST http://localhost:8080/accounts
-   ```
-
-   ```bash
-   POST http://localhost:8080/bank/deposit
-   ```
-
-   ```bash
-   POST http://localhost:8080/bank/withdraw
-   ```
-
-   ```bash
-   POST http://localhost:8080/bank/pix
-   ```
-
-   ```bash
-   DELETE http://localhost:8080/accounts/{id}
-   ```
