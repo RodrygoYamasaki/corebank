@@ -30,35 +30,35 @@ Este projeto é uma API REST desenvolvida com Spring Boot para simular as funcio
 - Realiza um depósito em uma conta bancária existente.
 - Corpo JSON:
 
-  ```json
-  {
-  "accountId": "5",
-  "amount": "1200.50"
-  }
-  ```
+```json
+{
+"accountId": "5",
+"amount": "1200.50"
+}
+```
 
 **POST /bank/withdraw**
 - Realiza um saque na conta bancária.
 - Corpo JSON:
 
-  ```json
-  {
-  "accountId": "5",
-  "amount": "350.00"
-  }
-  ```
+```json
+{
+"accountId": "5",
+"amount": "350.00"
+}
+```
 
 **POST /bank/pix**
 - Realiza uma transferência PIX de uma conta de origem para uma conta de destino.
 - Corpo JSON:
 
-  ```json
-  {
-  "originAccountId": "5",
-  "destinationAccountId": "8",
-  "amount": "500.00"
-  }
-  ```
+```json
+{
+"originAccountId": "5",
+"destinationAccountId": "8",
+"amount": "500.00"
+}
+```
 
 ---
 
